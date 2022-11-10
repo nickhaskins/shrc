@@ -50,3 +50,15 @@ Also try these out:
 git config --global user.name "Nick Haskins"
 git config --global user.email "foo@bar.com"
 ```
+
+Also add this to your rc:
+```sh
+function clean-git-branches () {
+	DEFAULT_BRANCH="${DEFAULT_BRANCH:-master}"
+	git checkout $DEFAULT_BRANCH
+	git fetch --prune
+	git pull
+	git branch -vv | grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn} 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -D
+	git checkout -
+}
+```
