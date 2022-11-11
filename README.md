@@ -33,6 +33,9 @@ https://github.com/doomemacs/doomemacs
 
 `brew install neovim`
 
+Also install the fancy plugins: https://github.com/luan/nvim
+You may need to install some dependencies, like `curl`, `fd`, `npm`, the [`pynvim`](https://github.com/neovim/pynvim) package, and `tmux`(?)
+
 ### Install git completion:
 
 This doesn't seem to work anymore: https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
