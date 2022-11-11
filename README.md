@@ -65,3 +65,11 @@ function clean-git-branches () {
 	git checkout -
 }
 ```
+
+### Install direnv
+
+I believe it comes preinstalled on newer versions of MacOS. Enable it for zsh with the following in your `.zshrc`:
+
+``` sh
+eval "$(direnv hook zsh)"
+```
