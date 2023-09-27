@@ -7,6 +7,8 @@ RC files to set up a new computer
 
 ### Install iTerm
 
+### Set up a new github ssh key
+
 ### install home brew
 
 ### install oh my zsh
