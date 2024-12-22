@@ -67,3 +67,18 @@ function clean-git-branches () {
 	git checkout -
 }
 ```
+
+### Install tmux
+
+``` sh
+brew install tmux
+```
+
+Then [install tpm](https://github.com/tmux-plugins/tpm?tab=readme-ov-file#installation):
+```sh
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+Then Configure tmux with the .tmux.conf file in this repo.
+
+`
