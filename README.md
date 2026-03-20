@@ -81,4 +81,6 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 Then Configure tmux with the .tmux.conf file in this repo.
 
+Finally, press `<prefix>+I` (capital "I") to install the configured plugins.
+
 `
