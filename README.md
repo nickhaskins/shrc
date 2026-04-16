@@ -59,7 +59,7 @@ git config --global user.email "foo@bar.com"
 Also add this to your rc:
 ```sh
 function clean-git-branches () {
-	DEFAULT_BRANCH="${DEFAULT_BRANCH:-master}"
+	DEFAULT_BRANCH="${DEFAULT_BRANCH:-main}"
 	git checkout $DEFAULT_BRANCH
 	git fetch --prune
 	git pull
@@ -83,4 +83,10 @@ Then Configure tmux with the .tmux.conf file in this repo.
 
 Finally, press `<prefix>+I` (capital "I") to install the configured plugins.
 
-`
+### Create an SSH Key for GitHub
+
+```sh
+ssh-keygen
+```
+
+Then add it as a key for your github account.
